@@ -35,7 +35,6 @@ public class Lesson11 {
     }
 
 
-
     public ArrayList<Integer> brick(int a, int b, int c) {
 
         ArrayList<Integer> brick = new ArrayList<>();
@@ -50,18 +49,18 @@ public class Lesson11 {
 
     }
 
-      public ArrayList<Integer> port (int x, int y) {
-          ArrayList<Integer> port = new ArrayList<>();
+    public ArrayList<Integer> port(int x, int y) {
+        ArrayList<Integer> port = new ArrayList<>();
 
-          port.add(0, x);
-          port.add(1, y);
+        port.add(0, x);
+        port.add(1, y);
 
-          Collections.sort(port);
+        Collections.sort(port);
 
-          return port;
-      }
+        return port;
+    }
 
-      public void equalsObject(ArrayList<Integer> brick, ArrayList<Integer> port) {
+    public void equalsObject(ArrayList<Integer> brick, ArrayList<Integer> port) {
 
         System.out.println("Кирпич: " + brick);
         System.out.println("Отверстие: " + port);
@@ -72,12 +71,11 @@ public class Lesson11 {
         int index2 = port.get(0);
         int index3 = port.get(1);
 
-         if (index >= index2 && index1 >= index3) {
-             System.out.println("Кирпич не проходит");
-         }
-         else {
-             System.out.println("Кирпич проходит");
-         }
+        if (index >= index2 || index1 >= index3) {
+            System.out.println("Кирпич не проходит");
+        } else {
+            System.out.println("Кирпич проходит");
+        }
 
     }
 }
